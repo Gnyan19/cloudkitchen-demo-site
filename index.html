@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Taste | Cloud Kitchen</title>
+    <meta name="description"
+        content="Freshly Prepared Meals Delivered to Your Door. Minimalist home kitchen serving healthy, affordable meals.">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav-container">
+            <div class="logo">Urban Taste.</div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#popular">Popular</a>
+                <a href="#why-us">Why Us</a>
+                <a href="#reviews">Reviews</a>
+            </div>
+            <!-- WhatsApp CTA directly in header -->
+            <a href="#order" class="btn btn-black" style="padding: 0.6rem 1.25rem; display: none;" id="navCta">Order
+                Now</a>
+            <button class="nav-toggle" id="mobileToggle" aria-label="Toggle Navigation">&#9776;</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <h1>Freshly Prepared Meals Delivered to Your Door</h1>
+                <p>Experience home-style cooking elevated with modern techniques. Clean ingredients, quick delivery,
+                    unforgettable taste.</p>
+                <div class="hero-actions">
+                    <a href="#menu" class="btn btn-black">View Menu</a>
+                    <a href="#order" class="btn btn-white">Order Now</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/urban-hero.png" alt="Fresh minimalist food bowl">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section-padding bg-alt reveal" id="about">
+        <div class="container about-content">
+            <h2>Redefining Home Delivery</h2>
+            <p>Urban Taste is a modern cloud kitchen built entirely on the concept of transparency and taste. We believe
+                that delivery food shouldn't feel heavy or compromised. Operating from a highly sanitized,
+                state-of-the-art kitchen, our chefs use only morning-fresh ingredients to craft meals that are as
+                nourishing as they are delicious. Affordable meals, zero preservatives, and swift delivery right to your
+                desk or dining table.</p>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu section-padding" id="menu">
+        <div class="container">
+            <div class="section-head reveal">
+                <h2>Our Menu</h2>
+                <p>Simple, focused, and perfected daily.</p>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Starters -->
+                <div class="menu-category reveal">
+                    <h3>Starters</h3>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Wild Mushroom Bruschetta</h4>
+                            <p>Truffle oil, parmesan, toasted sourdough</p>
+                        </div>
+                        <div class="menu-item-price">$8.00</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Charred Asparagus</h4>
+                            <p>Lemon zest, sea salt, olive oil drizzle</p>
+                        </div>
+                        <div class="menu-item-price">$9.50</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Crispy Calamari Rings</h4>
+                            <p>Light batter, garlic aioli dip</p>
+                        </div>
+                        <div class="menu-item-price">$12.00</div>
+                    </div>
+                </div>
+
+                <!-- Main Course -->
+                <div class="menu-category reveal">
+                    <h3>Main Course</h3>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Grilled Atlantic Salmon</h4>
+                            <p>Quinoa bed, roasted greens, lemon butter sauce</p>
+                        </div>
+                        <div class="menu-item-price">$24.00</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Truffle Pasta</h4>
+                            <p>Handmade tagliatelle, wild mushrooms, cream</p>
+                        </div>
+                        <div class="menu-item-price">$18.50</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Herb-Crusted Chicken</h4>
+                            <p>Mashed potatoes, glazed carrots, pan jus</p>
+                        </div>
+                        <div class="menu-item-price">$21.00</div>
+                    </div>
+                </div>
+
+                <!-- Combos -->
+                <div class="menu-category reveal">
+                    <h3>Combos</h3>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>The Executive Box</h4>
+                            <p>Pasta + Side Salad + Drink</p>
+                        </div>
+                        <div class="menu-item-price">$22.00</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Protein Power</h4>
+                            <p>Chicken + Double Greens + Protein Shake</p>
+                        </div>
+                        <div class="menu-item-price">$26.00</div>
+                    </div>
+                </div>
+
+                <!-- Beverages -->
+                <div class="menu-category reveal">
+                    <h3>Beverages</h3>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Artisan Cold Brew</h4>
+                            <p>Steeped 18 hours, served over ice</p>
+                        </div>
+                        <div class="menu-item-price">$5.50</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Matcha Lemonade</h4>
+                            <p>Ceremonial grade matcha, fresh lemon</p>
+                        </div>
+                        <div class="menu-item-price">$6.00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Dishes -->
+    <section class="popular section-padding bg-alt" id="popular">
+        <div class="container">
+            <div class="section-head reveal">
+                <h2>Customer Favorites</h2>
+            </div>
+            <div class="popular-grid">
+                <div class="popular-card reveal" style="transition-delay: 0.1s">
+                    <img src="images/urban-main.png" alt="Grilled Salmon" loading="lazy">
+                    <div class="popular-info">
+                        <h4>Grilled Atlantic Salmon</h4>
+                    </div>
+                </div>
+                <div class="popular-card reveal" style="transition-delay: 0.2s">
+                    <img src="images/urban-starter.png" alt="Wild Mushroom Bruschetta" loading="lazy">
+                    <div class="popular-info">
+                        <h4>Wild Mushroom Bruschetta</h4>
+                    </div>
+                </div>
+                <div class="popular-card reveal" style="transition-delay: 0.3s">
+                    <img src="images/urban-combo.png" alt="The Executive Box" loading="lazy">
+                    <div class="popular-info">
+                        <h4>The Executive Box</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us section-padding" id="why-us">
+        <div class="container">
+            <div class="section-head reveal">
+                <h2>Why Urban Taste</h2>
+                <p>Our commitment to exceptional quality delivered to your door.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card reveal" style="transition-delay: 0.1s">
+                    <h4>Fresh Ingredients</h4>
+                    <p>We source local, seasonal produce every morning to ensure peak flavor and nutritional value.</p>
+                </div>
+                <div class="feature-card reveal" style="transition-delay: 0.2s">
+                    <h4>Hygienic Cooking</h4>
+                    <p>Prepared in an FSSAI-certified, impeccably clean environment strictly adhering to safety
+                        standards.</p>
+                </div>
+                <div class="feature-card reveal" style="transition-delay: 0.3s">
+                    <h4>Quick Preparation</h4>
+                    <p>Optimized cloud kitchen workflows mean your food goes from pan to packaging in minutes.</p>
+                </div>
+                <div class="feature-card reveal" style="transition-delay: 0.4s">
+                    <h4>Affordable Pricing</h4>
+                    <p>No dining room overhead means restaurant-quality meals at everyday accessible prices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="testimonials section-padding bg-alt" id="reviews">
+        <div class="container">
+            <div class="section-head reveal">
+                <p class="section-label"
+                    style="font-size: 13px; font-weight: 500; letter-spacing: 3px; text-transform: uppercase; color: var(--clr-text-muted); margin-bottom: 16px;">
+                    What They Say</p>
+                <h2>Client Experiences</h2>
+            </div>
+            <div class="testimonials-grid"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px;">
+                <div class="testimonial-card reveal" style="transition-delay: 0.1s">
+                    <div class="testimonial-card-stars" style="display: flex; gap: 4px; margin-bottom: 24px;">
+                        <i data-lucide="star"
+                            style="width: 16px; height: 16px; fill: var(--clr-black); stroke: var(--clr-black);"></i>
+                        <i data-lucide="star"
+                            style="width: 16px; height: 16px; fill: var(--clr-black); stroke: var(--clr-black);"></i>
+                        <i data-lucide="star"
+                            style="width: 16px; height: 16px; fill: var(--clr-black); stroke: var(--clr-black);"></i>
+                        <i data-lucide="star"
+                            style="width: 16px; height: 16px; fill: var(--clr-black); stroke: var(--clr-black);"></i>
+                        <i data-lucide="star"
+                            style="width: 16px; height: 16px; fill: var(--clr-black); stroke: var(--clr-black);"></i>
+                    </div>
+                    <blockquote class="testimonial-card-quote">"The cleanest, freshest delivery I've had in a long time.
+                        The salmon was
+                        cooked perfectly, completely unexpected for delivery food."</blockquote>
+                    <div class="testimonial-card-author">
+                        <div class="testimonial-card-avatar">S</div>
+                        <div>
+                            <p class="testimonial-card-name">Sarah Jenkins</p>
+                            <p class="testimonial-card-role">Regular Client</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal" style="transition-delay: 0.2s">
+                    <div class="testimonial-card-stars" style="display: flex; gap: 4px; margin-bottom: 24px;">
+                        <i data-lucide="star"
+                            style="width: 16px; height: 16px; fill: var(--clr-black); stroke: var(--clr-black);"></i>
+                        <i data-lucide="star"
+                            style="width: 16px; height: 16px; fill: var(--clr-black); stroke: var(--clr-black);"></i>
+                        <i data-lucide="star"
+                            style="width: 16px; height: 16px; fill: var(--clr-black); stroke: var(--clr-black);"></i>
+                        <i data-lucide="star"
+                            style="width: 16px; height: 16px; fill: var(--clr-black); stroke: var(--clr-black);"></i>
+                        <i data-lucide="star"
+                            style="width: 16px; height: 16px; fill: var(--clr-black); stroke: var(--clr-black);"></i>
+                    </div>
+                    <blockquote class="testimonial-card-quote">"My daily go-to for lunch at the office. The Executive
+                        Box is the perfect
+                        portion size and the cold brew is exceptional."</blockquote>
+                    <div class="testimonial-card-author">
+                        <div class="testimonial-card-avatar">M</div>
+                        <div>
+                            <p class="testimonial-card-name">Marcus Webb</p>
+                            <p class="testimonial-card-role">Corporate Client</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal" style="transition-delay: 0.3s">
+                    <div class="testimonial-card-stars" style="display: flex; gap: 4px; margin-bottom: 24px;">
+                        <i data-lucide="star"
+                            style="width: 16px; height: 16px; fill: var(--clr-black); stroke: var(--clr-black);"></i>
+                        <i data-lucide="star"
+                            style="width: 16px; height: 16px; fill: var(--clr-black); stroke: var(--clr-black);"></i>
+                        <i data-lucide="star"
+                            style="width: 16px; height: 16px; fill: var(--clr-black); stroke: var(--clr-black);"></i>
+                        <i data-lucide="star"
+                            style="width: 16px; height: 16px; fill: var(--clr-black); stroke: var(--clr-black);"></i>
+                        <i data-lucide="star"
+                            style="width: 16px; height: 16px; fill: var(--clr-black); stroke: var(--clr-black);"></i>
+                    </div>
+                    <blockquote class="testimonial-card-quote">"Ordering via WhatsApp is completely seamless. They
+                        always confirm within
+                        minutes and the food arrives exactly on time."</blockquote>
+                    <div class="testimonial-card-author">
+                        <div class="testimonial-card-avatar">E</div>
+                        <div>
+                            <p class="testimonial-card-name">Elena Rodriguez</p>
+                            <p class="testimonial-card-role">Loyal Client</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Delivery Areas -->
+    <section class="delivery section-padding">
+        <div class="container">
+            <div class="section-head reveal">
+                <h2>Delivery Zones</h2>
+                <p>Currently serving these localized areas to guarantee food arrives hot.</p>
+            </div>
+            <div class="delivery-tags">
+                <span class="delivery-tag reveal" style="transition-delay: 0.1s">Anna Nagar</span>
+                <span class="delivery-tag reveal" style="transition-delay: 0.2s">Mogappair</span>
+                <span class="delivery-tag reveal" style="transition-delay: 0.3s">Ambattur</span>
+                <span class="delivery-tag reveal" style="transition-delay: 0.4s">Koyambedu</span>
+                <span class="delivery-tag reveal" style="transition-delay: 0.5s">Nolambur</span>
+                <span class="delivery-tag reveal" style="transition-delay: 0.6s">Shenoy Nagar</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Booking Form (Crucial Logic) -->
+    <section class="order-section section-padding" id="order">
+        <div class="container">
+            <div class="section-head reveal">
+                <h2>Book Your Order</h2>
+                <p>Fill out the details below. We'll instantly process your request via WhatsApp.</p>
+            </div>
+
+            <div class="order-form">
+                <form id="whatsappForm" class="reveal" style="transition-delay: 0.2s">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="form-label" for="customerName">Full Name</label>
+                            <input type="text" id="customerName" class="form-control" placeholder="John Doe" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="customerPhone">Phone Number</label>
+                            <input type="tel" id="customerPhone" class="form-control" placeholder="+91 98765 43210"
+                                required>
+                        </div>
+
+                        <div id="dishSelectionContainer" class="form-group full">
+                            <label class="form-label">Order Items</label>
+                            <div class="dish-row">
+                                <div class="dish-select-wrapper">
+                                    <select class="form-control foodItem" required>
+                                        <option value="" disabled selected>Choose from menu...</option>
+                                        <optgroup label="Starters">
+                                            <option value="Wild Mushroom Bruschetta">Wild Mushroom Bruschetta</option>
+                                            <option value="Charred Asparagus">Charred Asparagus</option>
+                                            <option value="Crispy Calamari Rings">Crispy Calamari Rings</option>
+                                        </optgroup>
+                                        <optgroup label="Main Course">
+                                            <option value="Grilled Atlantic Salmon">Grilled Atlantic Salmon</option>
+                                            <option value="Truffle Pasta">Truffle Pasta</option>
+                                            <option value="Herb-Crusted Chicken">Herb-Crusted Chicken</option>
+                                        </optgroup>
+                                        <optgroup label="Combos">
+                                            <option value="The Executive Box">The Executive Box</option>
+                                            <option value="Protein Power">Protein Power</option>
+                                        </optgroup>
+                                        <optgroup label="Beverages">
+                                            <option value="Artisan Cold Brew">Artisan Cold Brew</option>
+                                            <option value="Matcha Lemonade">Matcha Lemonade</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                                <div class="dish-quantity-wrapper">
+                                    <input type="number" class="form-control quantity" min="1" max="20" value="1"
+                                        placeholder="Qty" required>
+                                </div>
+                                <div class="dish-action-wrapper">
+                                    <button type="button" class="btn-remove-dish" style="visibility: hidden;"
+                                        aria-label="Remove Dish">
+                                        <i data-lucide="trash-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group full" style="margin-top: -0.5rem;">
+                            <button type="button" id="addDishBtn" class="btn-add-dish">
+                                <i data-lucide="plus"></i> Add Another Dish
+                            </button>
+                        </div>
+
+                        <div class="form-group full">
+                            <label class="form-label" for="deliveryAddress">Delivery Address</label>
+                            <textarea id="deliveryAddress" class="form-control" placeholder="Apt, Street Name, Area..."
+                                required></textarea>
+                        </div>
+
+                        <div class="form-group full">
+                            <label class="form-label" for="deliveryDateTime">Delivery Date & Time</label>
+                            <input type="datetime-local" id="deliveryDateTime" class="form-control" required>
+                        </div>
+
+                        <div class="form-group full">
+                            <button type="submit" class="btn btn-white">Book Order</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer section-padding bg-alt" id="contact" style="border-top: 1px solid var(--clr-border);">
+        <div class="container">
+            <div class="footer-inner"
+                style="display: flex; align-items: center; justify-content: space-between; padding-bottom: 40px; border-bottom: 1px solid var(--clr-border); margin-bottom: 28px; flex-wrap: wrap; gap: 2rem;">
+                <div class="footer-brand">
+                    <a href="#" class="logo" style="font-size: 24px; color: var(--clr-black);">Urban
+                        Taste<span>.</span></a>
+                    <p class="footer-tagline" style="font-size: 14px; color: var(--clr-text-muted); margin-top: 8px;">
+                        Elevating home delivery, one meal at a time.</p>
+                </div>
+                <div class="footer-links"
+                    style="display: flex; gap: 32px; font-size: 14px; color: var(--clr-text-muted);">
+                    <a href="#about" style="transition: color 0.3s; color: inherit;">About</a>
+                    <a href="#menu" style="transition: color 0.3s; color: inherit;">Menu</a>
+                    <a href="#popular" style="transition: color 0.3s; color: inherit;">Popular</a>
+                    <a href="#contact" style="transition: color 0.3s; color: inherit;">Contact</a>
+                </div>
+                <div class="footer-socials" style="display: flex; gap: 20px;">
+                    <a href="#" aria-label="Instagram"
+                        style="width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--clr-border); display: flex; align-items: center; justify-content: center; color: var(--clr-text-muted); transition: all 0.3s;"><i
+                            data-lucide="instagram" style="width: 18px; height: 18px;"></i></a>
+                    <a href="#" aria-label="Facebook"
+                        style="width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--clr-border); display: flex; align-items: center; justify-content: center; color: var(--clr-text-muted); transition: all 0.3s;"><i
+                            data-lucide="facebook" style="width: 18px; height: 18px;"></i></a>
+                    <a href="#" aria-label="Twitter"
+                        style="width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--clr-border); display: flex; align-items: center; justify-content: center; color: var(--clr-text-muted); transition: all 0.3s;"><i
+                            data-lucide="twitter" style="width: 18px; height: 18px;"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom" style="text-align: center; font-size: 13px; color: var(--clr-text-muted);">
+                <p>&copy; <span id="year"></span> Urban Taste Cloud Kitchen. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
